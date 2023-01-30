@@ -1,3 +1,17 @@
+/* Fonts */
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Bold.woff2) format("woff2"),
+        url(../fonts/Montserrat-Bold.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+   --accent-color: #6e728e;
+}
+
 html {
     box-sizing: border-box;
     height: 100%;
@@ -17,10 +31,10 @@ body {
     padding: 0;
     margin: 0;
     font-size: 16px;
-    font-family: "Arial", sans-serif;
-    line-height: 1.5;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
     background-color: #fff;
-    color: #222;
+    color: var(--accent-color);
 }
 
 img {
@@ -30,14 +44,125 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1440px;
+    padding-left: 195px;
+    padding-right: 195px;
+    padding-bottom: 103px;
+    padding-top: 71px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #f2f2f2;
+    background-image: url(../img/bg-left-bottom.svg),
+    url(../img/bg-right-top.svg);
+    background-position: bottom -450px left -150px, top -100px right -80px ;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
-/* Main content */
-.main-content {
-    flex-grow: 1;
+/* Header styles */
+.toggler-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
 }
+
+.heading {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.btn-box {
+    display: flex;
+    align-items: center;
+}
+.link-text {
+    font-size: 15px;
+    line-height: 28px;
+    opacity: 0.5;
+}
+.link-box {
+    display: flex;
+    align-items: center;
+    width: 56px;
+    height: 32px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
+.main-link {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: #fff;
+}
+.annually {
+    margin-left: 4px;
+}
+.monthly {
+    margin-right: 4px;
+}
+
+/* Main styles */
+.main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1050px;
+}
+
+.price-box {
+    width: 100%;
+    max-width: 350px;
+    padding: 31px;
+    background-color: #fff;
+    box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.price-item {
+    border-bottom: 1px solid rgba(110, 114, 142, 0.3);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.price-heading {
+    margin: 0;
+    margin-bottom: 22px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+.price-number {
+    color: #4a4d60;
+    font-size: 72px;
+    line-height: 70px;
+    letter-spacing: -3px;
+    text-align: center;
+
+}
+.dollar-sign {
+    text-align: center;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -2px;
+    margin-right: 8px;
+}
+
+/* Button styles */
