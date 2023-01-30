@@ -16,14 +16,18 @@
         <!-- Header -->
         <header class="toggler-box">
                 <h1 class="heading">Our Pricing</h1>
-                <div class="btn-box">
-                    <span class="link-text">Annually</span>
-                    <div class="link-box">
-                        <a class=" main-link annually" href="annual.html"></a>
-                        <a class=" main-link monthly" href="index.html"></a>
+                <form action="https://htmlacademy.ru" method="GET">
+                    <input class="payment-period-annual visually-hidden" type="radio" name="payment-period-radio" id="period-annual">
+                    <input class="payment-period-monthly visually-hidden" type="radio" name="payment-period-radio" id="period-monthly">
+
+                    <label for="period-annual">Annually</label>
+                    <div class="payment-toggler-wrapper">
+                        <div class="toggler-round"></div>
+                        <label class="payment-toggler-annual" for="period-annual"></label>
+                        <label class="payment-toggler-monthly" for="period-monthly"></label>
                     </div>
-                    <span class="link-text">Monthly</span>
-                </div>
+                    <label for="period-monthly">Monthly</label>
+                </form>
         </header>
 
         <main class="main">
@@ -35,8 +39,7 @@
                     <li class="price-item">2 Users Allowed</li>
                     <li class="price-item">Send up to 3 GB</li>
                 </ul>
-                <button class="btn-main" type="button">learn more
-                </button>
+                <a href="#" class="btn-main" >learn more</a>
             </div>
             <div class="price-box middle">
                 <h3 class="price-heading middle-heading">Professional</h3>
@@ -46,22 +49,21 @@
                     <li class="price-item md-border">5 Users Allowed</li>
                     <li class="price-item md-border">Send up to 10 GB</li>
                 </ul>
-                <button class="btn-main middle-btn" type="button">learn more
-                </button>
+                <a href="#" class="btn-main middle-btn" >learn more</a>
             </div>
-            <div class="price-box">
+            <div class="price-box last">
                 <h3 class="price-heading">Master</h3>
-                <ul class="price-list">
+                <ul class="price-list ">
                     <li class="price-item price-number"><span class="dollar-sign">$</span>39.99</li>
                     <li class="price-item">2 TB Storage</li>
                     <li class="price-item">10 Users Allowed</li>
                     <li class="price-item">Send up to 20 GB</li>
                 </ul>
-                <button class="btn-main" type="button">learn more
-                </button>
+                <a href="#" class="btn-main" >learn more</a>
             </div>
         </main>
     </div>
+
     <script src="./js/main.js"></script>
 </body>
 </html>
