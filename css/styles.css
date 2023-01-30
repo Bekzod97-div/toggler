@@ -104,19 +104,22 @@ img {
 }
 
 .annually {
+    display: block;
     width: 24px;
     height: 24px;
     margin-left: 4px;
 }
-
-.monthly {
-    display: flex;
-    width: 24px;
-    height: 24px;
+.js-link {
     border-radius: 50%;
     margin-top: 4px;
     margin-bottom: 4px;
     background-color: #fff;
+}
+
+.monthly {
+    display: block;
+    width: 24px;
+    height: 24px;
     margin-right: 4px;
 }
 
