@@ -135,12 +135,14 @@ img {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-bottom: 32px;
 }
 
 .price-item {
     border-bottom: 1px solid rgba(110, 114, 142, 0.3);
     padding-top: 15px;
     padding-bottom: 15px;
+    text-align: center;
 }
 .price-heading {
     margin: 0;
@@ -155,6 +157,7 @@ img {
     line-height: 70px;
     letter-spacing: -3px;
     text-align: center;
+    padding-bottom: 34px;
 
 }
 .dollar-sign {
@@ -166,3 +169,48 @@ img {
 }
 
 /* Button styles */
+.btn-main {
+    display: block;
+    width: 100%;
+    padding: 14px 66px;
+    background-image: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+    border-radius: 6px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+
+.btn-main:hover {
+    background-image: unset;
+    color: var(--accent-color);
+}
+
+/* Middle styles */
+.middle {
+    background-image: linear-gradient(135.06deg, #a2a7f0 -0.05%, #696edd 100.05%);
+    box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+    border-radius: 10px;
+    color: #fff;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+.md-border {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.middle-btn {
+    background-image: none;
+    background-color: #fff;
+    color: var(--accent-color);
+}
+.middle-btn:hover {
+    background-image: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+}
+
+.md, .md-number, .middle-heading {
+    color: #fff;
+}
